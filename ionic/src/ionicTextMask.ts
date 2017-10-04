@@ -11,7 +11,7 @@ export const MASKEDINPUT_VALUE_ACCESSOR: Provider = {
 @Directive({
   host: {
     '(input)': 'onInput($event.target.value)',
-    '(blur)': '_onTouched()'
+    '(ionBlur)': '_onTouched()'
   },
   selector: '[textMask]',
   exportAs: 'textMask',
