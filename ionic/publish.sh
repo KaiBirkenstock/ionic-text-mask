@@ -7,7 +7,7 @@ if [ -z "$version" ]; then
   exit 1
 fi
 
-cd ./angular2
+cd ./ionic
 
 npm run build
 
@@ -15,4 +15,4 @@ generatedNpmVersion="$(npm version $version)"
 
 npm publish --access public
 
-git tag "angular2-${generatedNpmVersion}"
+git tag "ionic-${generatedNpmVersion}"
